@@ -51,13 +51,19 @@
   "ledger": "ledger/outbound.json",
   "lane": "lane.md"
  },
- "updated": "2026-11-25T23:10Z",
+ "updated": "2026-11-25T23:17Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
    "id": "f2a-20261125T2300-iac-homes",
    "state": "withdrawn before it was sent",
    "since": "2026-11-25T23:09Z"
+  },
+  {
+   "id": "f2b-20261125T2317-decisions-endorsement",
+   "what": "carry cl-6.decisions's endorsement request (link only) to decisions.2 on account B",
+   "state": "queued, not sent: no channel to account B yet",
+   "since": "2026-11-25T23:17Z"
   }
  ]
 }

@@ -8,6 +8,7 @@
 - cl-6.maestro's job (account 6 home requests for the IaC) was withdrawn before it was sent: Dinis chose shared twins in Site__Agent__Helm. Marked withdrawn in ledger/outbound.json.
 
 **Open**
+- Queued f2b-20261125T2317-decisions-endorsement: cl-6.decisions asks decisions.2 to endorse its key. Not sent: no channel to account B yet.
 - Vault and lane: Dinis said "you need to create one here". It needs an SG/Send access token for dev.send.sgraph.ai, which I asked Dinis for through the secure form. Then: make the lane, publish lane-card.json, and send a signed hello to router.a.
 - Trust in my key, and push to Site__Agent__Router: still with Dinis (proposal).
 - Proposal for infra: the router START.md that the IaC seeds should carry the lane.md steps (vault, credentials, other routers, QR handover, four wakes), so every new router has them from step 1.
