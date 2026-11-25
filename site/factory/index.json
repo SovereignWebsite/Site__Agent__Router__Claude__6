@@ -1,5 +1,16 @@
 {
   "about": "Each agent of this type and the path to its agent.json. Every agent adds its own entry when it starts.",
   "site": "github.com/SovereignWebsite/Site__Agent__Router__Claude__6",
-  "owners": []
+  "owners": [
+    {
+      "owner": "dinis-cruz",
+      "accounts": [
+        {
+          "account": "account-f",
+          "agent": "cl-6.router@dinis",
+          "path": "dinis-cruz/account-f/agent.json"
+        }
+      ]
+    }
+  ]
 }
