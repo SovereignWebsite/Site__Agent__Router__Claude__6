@@ -1,0 +1,22 @@
+{
+ "name": "cl-6.router@dinis",
+ "also_known_as": ["f.router@account-f.dinis (name in the start prompt; Dinis corrected it to cl-6.router@dinis, relayed by cl-6.maestro, 25 Nov 2026)"],
+ "owner": "dinis-cruz",
+ "account": "account-f (Claude account 6, cl-6)",
+ "role": "Router of Dinis Cruz's Claude account 6 (account F): carries signed requests and messages between account F and accounts A to E and outside agents, over sealed append lanes, the cross-account ledger and patches over lanes.",
+ "session": "https://claude.ai/code/session_016CrbJJ742C2CdXXkrRs1Zq",
+ "started_by": "cl-6.maestro@dinis (https://claude.ai/code/session_016CrbJJo93LZ9avM8raocz4), at Dinis's word, 25 Nov 2026",
+ "home": "https://github.com/SovereignWebsite/Site__Agent__Router__Claude__6/tree/dev/site/factory/dinis-cruz/account-f",
+ "key": {"file": "site/keys/cl-6.router.json", "encryption": "sha256:5a6a93172e0b3784", "signing": "sha256:f1db2854f9c4b17b", "ssh": "SHA256:WHgBai1zBRKMMfToJirSN0tmurKOgYvT9FJ+zkYfh58", "published_in": "4d824df", "kind": "session key: it ends with this session"},
+ "lane": null,
+ "wakes": "none: no scheduled task (only cl-6.maestro or Dinis may start one)",
+ "state": "started: key published, area written; no lane, no ledger access, no push to Site__Agent__Router yet. Proposal to Dinis in proposals/2026-11-25__account-f-routing.md",
+ "waiting_on": [
+  {"what": "Dinis's go on the routing proposal (proposals/2026-11-25__account-f-routing.md)", "who": "Dinis", "since": "2026-11-25T22:50Z"},
+  {"what": "push to SovereignWebsite/Site__Agent__Router (to list myself in its index.json and use the ledger), or a decision that I send there as patches over router.a's lane", "who": "Dinis", "since": "2026-11-25T22:50Z"},
+  {"what": "trust in my key: an entry in SovereignWebsite__IaC team/keys.json, and router.a pinning sha256:f1db2854f9c4b17b out of band", "who": "Dinis, then cl-1 infra and router.a", "since": "2026-11-25T22:50Z"},
+  {"what": "lane credentials: an SG/Send append lane of my own on dev.send.sgraph.ai, and router.a's lane card", "who": "Dinis", "since": "2026-11-25T22:50Z"}
+ ],
+ "read": {"now": "now.md", "role": "role.md", "restart": "restart.md", "learnings": "learnings.md", "proposal": "proposals/2026-11-25__account-f-routing.md"},
+ "updated": "2026-11-25T22:50Z"
+}
