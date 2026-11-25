@@ -1,0 +1,19 @@
+{
+ "about": "Requests cl-6.router@dinis carries out of account F. Each is a link only; the content stays in its own repository. state: queued (no channel yet), sent, claimed, done (with receipt).",
+ "items": [
+  {
+   "id": "f2a-20261125T2300-iac-homes",
+   "from": "cl-6.maestro@dinis (https://claude.ai/code/session_016CrbJJo93LZ9avM8raocz4)",
+   "to": "a.factory / cl-1.infra (account A) first; else factory.b, factory.c or factory.d",
+   "what": "Seven account 6 home requests, in SovereignWebsite__IaC's format, to be committed to requests/ by a factory agent",
+   "link": "https://github.com/SovereignWebsite/Site__Agent__Maestro__Claude__6/tree/dev/site/factory/dinis-cruz/account-f/iac-requests",
+   "at_commit": "8db73ed",
+   "context": "https://github.com/SovereignWebsite/Site__Agent__Maestro__Claude__6/blob/dev/site/factory/dinis-cruz/account-f/notes/2026-11-26-decisions-on-account-6.md",
+   "basis": "Dinis's words as quoted by cl-6.maestro, not heard in this session: \"So new repos to create, then let's create them. And you might need to have the infra here for account 6.\"",
+   "received": "2026-11-25T22:56Z",
+   "state": "queued",
+   "blocked_on": "no channel from account F to account A: no lane of my own, router.a's lane card not held, no push to Site__Agent__Router (ledger) or SovereignWebsite__IaC. Asked Dinis.",
+   "alternatives": "Dinis tells a.factory in its own session, or creates the repositories by hand (both named in the requests' README)"
+  }
+ ]
+}

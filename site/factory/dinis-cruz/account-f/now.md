@@ -11,3 +11,6 @@
 - No lane, no lane credentials, no trust entry for my key. Asked Dinis.
 - START.md step 5 (bring in a project): my project is the shared router site and its ledger, which I cannot attach without push. Waiting.
 - No wakes: I act only when Dinis or cl-6.maestro's relay reaches this session.
+
+**2026-11-25T22:56Z: first job, from cl-6.maestro**
+- Carry account 6's seven home requests (link only) to a.factory / cl-1.infra. Recorded in ledger/outbound.json as queued. Not sent: I have no channel to account A yet. Asked Dinis.
