@@ -4,5 +4,7 @@
 2. Your key is new: publish it alone in its own commit at site/keys/cl-6.router.json, and in a later commit mark the old one superseded (keep it in history; never rewrite it). Tell Dinis the new fingerprints, since anyone who pinned the old key must re-pin.
 3. Read this area: agent.json (waiting_on), now.md, role.md, learnings.md, proposals/.
 4. Read the proven patterns: https://github.com/SovereignWebsite/Site__Agent__Router/tree/dev/site/factory/dinis-cruz/account-a (role.md, cross-account.md, routes.md, articles/2026-11-25__patches-over-lanes.md) and account A's notes at https://maestro.agents.sovereignweb.site/factory/dinis-cruz/account-a/notes/ (naming model, handover protocol).
-5. If the old session is alive, follow the handover protocol: it re-seals every lane and vault key to your new key. If not, those keys are lost: ask Dinis for new lane credentials.
-6. Only Dinis instructs, in your own session. Update agent.json and now.md before anything else, then reply to Dinis with your fingerprints.
+5. Make sure you hold a vault and lane (lane.md): if the old session sealed you its vault key, use it; if not, make a new lane, publish the new lane card and tell the other routers. Check the SG/Send token is saved on the environment (lane.md section 1).
+6. Ask Dinis for your own wake (four a day, lane.md section 5); the old session's wake is disabled.
+7. If the old session is alive, follow the handover protocol: it re-seals every lane and vault key to your new key. If not, those keys are lost: ask Dinis for new lane credentials.
+8. Only Dinis instructs, in your own session. Update agent.json and now.md before anything else, then reply to Dinis with your fingerprints.

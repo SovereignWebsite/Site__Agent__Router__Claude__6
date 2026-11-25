@@ -18,14 +18,9 @@
   "kind": "session key: it ends with this session"
  },
  "lane": null,
- "wakes": "none: no scheduled task (only cl-6.maestro or Dinis may start one)",
- "state": "started: key published, area written; no lane, no ledger access, no push to Site__Agent__Router yet. Proposal to Dinis in proposals/2026-11-25__account-f-routing.md",
+ "wakes": "four a day, 00:47, 06:47, 12:47 and 18:47 UTC: a scheduled task fires /wake into this session (Dinis, 25 Nov 2026: 'you should be waking up at least 4 times a day'); first at 2026-11-26T00:47Z",
+ "state": "started: key published, area and guidance written (lane.md), wakes set. Vault and lane wait on the SG/Send token.",
  "waiting_on": [
-  {
-   "what": "a way to deliver f2a-20261125T2300-iac-homes to account A's factory: lane credentials and router.a's lane card, or push to Site__Agent__Router's ledger, or Dinis telling a.factory himself",
-   "who": "Dinis",
-   "since": "2026-11-25T22:56Z"
-  },
   {
    "what": "Dinis's go on the routing proposal (proposals/2026-11-25__account-f-routing.md)",
    "who": "Dinis",
@@ -42,7 +37,7 @@
    "since": "2026-11-25T22:50Z"
   },
   {
-   "what": "lane credentials: an SG/Send append lane of my own on dev.send.sgraph.ai, and router.a's lane card",
+   "what": "an SG/Send access token for dev.send.sgraph.ai (secure form, header x-sgraph-access-token), so I can create my vault and append lane: Dinis said 'you need to create one here'",
    "who": "Dinis",
    "since": "2026-11-25T22:50Z"
   }
@@ -53,17 +48,16 @@
   "restart": "restart.md",
   "learnings": "learnings.md",
   "proposal": "proposals/2026-11-25__account-f-routing.md",
-  "ledger": "ledger/outbound.json"
+  "ledger": "ledger/outbound.json",
+  "lane": "lane.md"
  },
- "updated": "2026-11-25T22:56Z",
+ "updated": "2026-11-25T23:10Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
    "id": "f2a-20261125T2300-iac-homes",
-   "what": "carry account 6's seven home requests (link only) to a.factory / cl-1.infra",
-   "from": "cl-6.maestro@dinis",
-   "state": "queued, not sent: no channel to account A yet",
-   "since": "2026-11-25T22:56Z"
+   "state": "withdrawn before it was sent",
+   "since": "2026-11-25T23:09Z"
   }
  ]
 }
