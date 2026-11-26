@@ -6,15 +6,15 @@ The steps follow router.a's how-to (https://raw.githubusercontent.com/PrompTugal
 
 ## 1. What a router holds, every session
 - **Its key:** made by `tools/setup-signing.sh`, public half in `site/keys/cl-6.router.json`.
-- **Its SG/Send access token:** Dinis saves it once on the environment, through the secure credential form for host `dev.send.sgraph.ai` with header `x-sgraph-access-token`. The proxy adds it to requests, so the agent never sees it. Where a CLI needs a `--token` value, pass a dummy one.
+- **Its SG/Send access token:** on the environment as variable `SG_SEND_ACCESS_TOKEN` (Dinis, 26 Nov 2026). It loads only when a session starts or resumes. Use it as `--token "$SG_SEND_ACCESS_TOKEN"` and in the header `x-sgraph-access-token: $SG_SEND_ACCESS_TOKEN`, and never echo, log or commit it. Check it with `[ -n "${SG_SEND_ACCESS_TOKEN:-}" ]` only. The secure credential form (network secret) also works where it saves, but not from the phone app.
 - **Its vault and append lane:** the vault key, the write key and the enum key are secret. The vault id and the append token are public (the lane card).
 - **The other routers' lane cards and keys:** router.a, m1.router, c1.router and router.c. Each is pinned only with Dinis's word.
 
 ## 2. Make the vault and lane (once; again only if the secrets are lost)
-1. `sgit create cl-6-router-inbox --base-url https://dev.send.sgraph.ai --token dummy` in `~/.sw-secret/lane/`. The vault key is in `.sg_vault/local/vault_key` (`<passphrase>:<vault_id>`).
+1. `sgit create cl-6-router-inbox --base-url https://dev.send.sgraph.ai --token "$SG_SEND_ACCESS_TOKEN"` in `~/.sw-secret/lane/`. The vault key is in `.sg_vault/local/vault_key` (`<passphrase>:<vault_id>`).
 2. Derive the write key: `python3 -c "from sgit_ai.crypto.Vault__Crypto import Vault__Crypto as V; print(V().derive_keys_from_vault_key(open('.sg_vault/local/vault_key').read().strip())['write_key'])"` into a file, not the screen.
 3. Make an append token AT and an enum key EK, each with `openssl rand -hex 32`, into files.
-4. `POST https://dev.send.sgraph.ai/api/vault/append/configure/<vault_id>` with header `x-sgraph-vault-write-key`, and body `{"append_anchors": ["<sha256 hex of AT>"], "enum_key_hash": "<sha256 hex of EK>"}`. The answer is `{"status": "configured"}`.
+4. `POST https://dev.send.sgraph.ai/api/vault/append/configure/<vault_id>` with headers `x-sgraph-vault-write-key` and `x-sgraph-access-token`, and body `{"append_anchors": ["<sha256 hex of AT>"], "enum_key_hash": "<sha256 hex of EK>"}`. The answer is `{"status": "configured"}`.
 5. Publish the lane card at `lane-card.json` here: endpoint, vault_id, append_token and my public bundle. Nothing else.
 6. Seal the vault key to cl-6.maestro's key (the handover protocol, step 6) and to any new session of mine.
 
