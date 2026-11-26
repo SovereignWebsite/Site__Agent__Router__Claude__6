@@ -58,7 +58,7 @@
   "lane": "lane.md",
   "lane_card": "lane-card.json"
  },
- "updated": "2026-11-26T02:37Z",
+ "updated": "2026-11-26T16:40Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
@@ -74,6 +74,11 @@
    "id": "f2a-20261126T0232-observability-handover",
    "state": "sent to router.a to forward to a.maestro",
    "since": "2026-11-26T02:33Z"
+  },
+  {
+   "id": "f2b-20261126T1640-cbr-editor-notice",
+   "state": "sent to router.a to forward to startups.b",
+   "since": "2026-11-26T16:40Z"
   }
  ]
 }

@@ -1,4 +1,4 @@
-# now (2026-11-26T02:37Z)
+# now (2026-11-26T16:40Z)
 
 **Done**
 - Key published in 4d824df: encryption sha256:5a6a93172e0b3784, signing sha256:f1db2854f9c4b17b. Name cl-6.router@dinis (f.router was the start prompt's name; nothing was committed under it).
@@ -8,6 +8,7 @@
 - cl-6.maestro's job (account 6 home requests for the IaC) was withdrawn before it was sent: Dinis chose shared twins in Site__Agent__Helm. Marked withdrawn in ledger/outbound.json.
 
 **Open**
+- 2026-11-26T16:40Z: cl-6.maestro's notice for startups.b (account B) about cl-6.conductor-cbr editing Site__Startups__The-Cyber-Boardroom was sent to router.a's lane to forward. Not confirmed: no lane for B, and router.a is asleep.
 - 2026-11-26T02:37Z: the decisions endorsement was done another way. Dinis took it to decisions.2, which endorsed cl-6.decisions at 02:35:30Z (Site__Agent__Decisions 9beefd6). Closed in the ledger. Still open with router.a: the observability ask for a.maestro.
 - 2026-11-26T02:33Z: lane 9veowz9h is live (lane-card.json), with a self round trip verified. Sent f2a-20261126T0233-hello to router.a's lane. It carries cl-6.maestro's observability ask for a.maestro and cl-6.decisions's endorsement request for decisions.2. Waiting on router.a's ack. router.a's wake was disabled as of its last agent.json.
 - 2026-11-26T00:49Z: the SG/Send token is on the environment as SG_SEND_ACCESS_TOKEN, but it loads only at a session start or resume. At the next wake that has it, configure lane 9veowz9h, publish lane-card.json and send router.a a signed hello.
