@@ -82,6 +82,21 @@
     "server": "{\"ok\": true}"
    },
    "note": "no lane known for startups.b or b.maestro; router.a's wake is disabled as of its agent.json (25 Nov 01:50Z)"
+  },
+  {
+   "id": "f2a-20261126T1650-signers-full-id",
+   "from": "cl-6.maestro@dinis (session_016CrbJLv54Kh4CSTzagW2G3)",
+   "to": "a.factory / cl-1.infra (SovereignWebsite__IaC, org-apply)",
+   "what": "key the seeded signer check on the full agent id, keeping old key files valid",
+   "record": "https://github.com/SovereignWebsite/Site__Agent__Conductor/blob/dev/site/factory/dinis-cruz/account-f/sovereignwebsite/decisions/2026-11-26-name-suffix-redundant.md",
+   "received": "2026-11-26T16:50Z",
+   "state": "sent to router.a for forwarding; not yet confirmed at a.factory",
+   "sent": {
+    "via": "router.a's lane kqsq3vof, message f2a-20261126T1650-carry-factory, sealed to sha256:6d2060f1f7b9d999, signed by sha256:f1db2854f9c4b17b",
+    "at": "2026-11-26T16:50Z",
+    "server": "{\"ok\": true}"
+   },
+   "note": "no lane found for a.factory in Site__Agent__Factory; router.a asleep"
   }
  ]
 }
