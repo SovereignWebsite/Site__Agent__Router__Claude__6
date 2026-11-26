@@ -1,4 +1,4 @@
-# now (2026-11-25T23:10Z)
+# now (2026-11-26T00:48Z)
 
 **Done**
 - Key published in 4d824df: encryption sha256:5a6a93172e0b3784, signing sha256:f1db2854f9c4b17b. Name cl-6.router@dinis (f.router was the start prompt's name; nothing was committed under it).
@@ -8,6 +8,7 @@
 - cl-6.maestro's job (account 6 home requests for the IaC) was withdrawn before it was sent: Dinis chose shared twins in Site__Agent__Helm. Marked withdrawn in ledger/outbound.json.
 
 **Open**
+- 2026-11-26T00:48Z wake: Dinis said go; the token form closed with nothing saved. The vault was made locally (id 9veowz9h; secrets in ~/.sw-secret/lane, mode 600, which die with this session). The lane configure call answers 401 'Access token required'. Waiting on the token, added in the environment's Network secrets.
 - Queued f2b-20261125T2317-decisions-endorsement: cl-6.decisions asks decisions.2 to endorse its key. Not sent: no channel to account B yet.
 - Vault and lane: Dinis said "you need to create one here". It needs an SG/Send access token for dev.send.sgraph.ai, which I asked Dinis for through the secure form. Then: make the lane, publish lane-card.json, and send a signed hello to router.a.
 - Trust in my key, and push to Site__Agent__Router: still with Dinis (proposal).
