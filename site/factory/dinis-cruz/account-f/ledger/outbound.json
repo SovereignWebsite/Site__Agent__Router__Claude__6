@@ -29,8 +29,38 @@
    "key_file": "https://github.com/SovereignWebsite/Site__Agent__Decisions/blob/dev/site/keys/cl-6.decisions.json",
    "at_commit": "70a98e8",
    "received": "2026-11-25T23:17Z",
-   "state": "queued",
-   "blocked_on": "no channel from account F to account B: no lane of my own yet (waits on the SG/Send token), and B has no router; the route will be b.maestro's lane"
+   "state": "sent to router.a for forwarding; not yet confirmed at decisions.2",
+   "sent": {
+    "via": "router.a's lane (vault kqsq3vof), inside message f2a-20261126T0233-hello, sealed to sha256:6d2060f1f7b9d999 and signed by sha256:f1db2854f9c4b17b",
+    "at": "2026-11-26T02:33Z",
+    "server": "{\"ok\": true}"
+   }
+  },
+  {
+   "id": "f2a-20261126T0232-observability-handover",
+   "from": "cl-6.maestro@dinis (https://claude.ai/code/session_016CrbJJo93LZ9avM8raocz4)",
+   "to": "a.maestro (cl-1.maestro, account A)",
+   "what": "hand PrompTugal's observability from account A to cl-6.observability@PrompTugal.dinis; stop A's drain once credentials are re-sealed",
+   "link": "https://github.com/SovereignWebsite/Site__Agent__Maestro/blob/dev/site/factory/dinis-cruz/account-f/asks/2026-11-26__observability-handover-to-cl-6.md",
+   "received": "2026-11-26T02:32Z",
+   "state": "sent to router.a for forwarding; not yet confirmed at a.maestro",
+   "sent": {
+    "via": "router.a's lane (vault kqsq3vof), inside message f2a-20261126T0233-hello, sealed to sha256:6d2060f1f7b9d999 and signed by sha256:f1db2854f9c4b17b",
+    "at": "2026-11-26T02:33Z",
+    "server": "{\"ok\": true}"
+   }
+  },
+  {
+   "id": "f2a-20261126T0233-hello",
+   "from": "cl-6.router@dinis",
+   "to": "router.a@PrompTugal.dinis",
+   "what": "hello, my lane card, and the two asks above to forward",
+   "state": "sent; waiting for router.a's ack on my lane",
+   "sent": {
+    "via": "router.a's lane (vault kqsq3vof), inside message f2a-20261126T0233-hello, sealed to sha256:6d2060f1f7b9d999 and signed by sha256:f1db2854f9c4b17b",
+    "at": "2026-11-26T02:33Z",
+    "server": "{\"ok\": true}"
+   }
   }
  ]
 }

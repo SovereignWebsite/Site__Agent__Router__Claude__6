@@ -25,8 +25,13 @@
   "tested": "self round trip sealed, signed and verified"
  },
  "wakes": "four a day, 00:47, 06:47, 12:47 and 18:47 UTC: a scheduled task fires /wake into this session (Dinis, 25 Nov 2026: 'you should be waking up at least 4 times a day'); first at 2026-11-26T00:47Z",
- "state": "waiting: token saved on the environment, not yet loaded in this container",
+ "state": "working: lane live; first hello and two asks sent to router.a",
  "waiting_on": [
+  {
+   "what": "router.a's ack of f2a-20261126T0233-hello on my lane, and confirmation that a.maestro and decisions.2 received their links (router.a's own wake was disabled at 25 Nov 01:50Z, by its agent.json, so it may not read its lane until Dinis wakes it)",
+   "who": "router.a",
+   "since": "2026-11-26T02:33Z"
+  },
   {
    "what": "Dinis's go on the routing proposal (proposals/2026-11-25__account-f-routing.md)",
    "who": "Dinis",
@@ -58,14 +63,17 @@
  "jobs": [
   {
    "id": "f2a-20261125T2300-iac-homes",
-   "state": "withdrawn before it was sent",
-   "since": "2026-11-25T23:09Z"
+   "state": "withdrawn before it was sent"
   },
   {
    "id": "f2b-20261125T2317-decisions-endorsement",
-   "what": "carry cl-6.decisions's endorsement request (link only) to decisions.2 on account B",
-   "state": "queued, not sent: no channel to account B yet",
-   "since": "2026-11-25T23:17Z"
+   "state": "sent to router.a to forward to decisions.2 via b.maestro",
+   "since": "2026-11-26T02:33Z"
+  },
+  {
+   "id": "f2a-20261126T0232-observability-handover",
+   "state": "sent to router.a to forward to a.maestro",
+   "since": "2026-11-26T02:33Z"
   }
  ]
 }
