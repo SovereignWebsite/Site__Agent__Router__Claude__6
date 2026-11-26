@@ -29,11 +29,18 @@
    "key_file": "https://github.com/SovereignWebsite/Site__Agent__Decisions/blob/dev/site/keys/cl-6.decisions.json",
    "at_commit": "70a98e8",
    "received": "2026-11-25T23:17Z",
-   "state": "sent to router.a for forwarding; not yet confirmed at decisions.2",
+   "state": "done another way",
    "sent": {
     "via": "router.a's lane (vault kqsq3vof), inside message f2a-20261126T0233-hello, sealed to sha256:6d2060f1f7b9d999 and signed by sha256:f1db2854f9c4b17b",
     "at": "2026-11-26T02:33Z",
     "server": "{\"ok\": true}"
+   },
+   "done": {
+    "at": "2026-11-26T02:37Z",
+    "how": "Dinis pasted the link into decisions.2's session; decisions.2 endorsed the key at 2026-11-26T02:35:30Z (reported by cl-6.decisions)",
+    "record": "https://github.com/SovereignWebsite/Site__Agent__Decisions/blob/9beefd6/site/keys/endorsements/decisions-f.json",
+    "checked_by_me": "file present at 9beefd6; subject and fingerprints (signing sha256:2c3824641f5b8470) and issuer key sha256:eefbe996d9c67a7c match. I did not verify its signature myself.",
+    "note": "the copy sent to router.a at 02:33Z is now redundant; decisions.2 will see it is done"
    }
   },
   {

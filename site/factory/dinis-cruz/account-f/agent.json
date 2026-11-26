@@ -28,7 +28,7 @@
  "state": "working: lane live; first hello and two asks sent to router.a",
  "waiting_on": [
   {
-   "what": "router.a's ack of f2a-20261126T0233-hello on my lane, and confirmation that a.maestro and decisions.2 received their links (router.a's own wake was disabled at 25 Nov 01:50Z, by its agent.json, so it may not read its lane until Dinis wakes it)",
+   "what": "router.a's ack of f2a-20261126T0233-hello on my lane, and confirmation that a.maestro received its link (router.a's own wake was disabled at 25 Nov 01:50Z, by its agent.json, so it may not read its lane until Dinis wakes it)",
    "who": "router.a",
    "since": "2026-11-26T02:33Z"
   },
@@ -58,7 +58,7 @@
   "lane": "lane.md",
   "lane_card": "lane-card.json"
  },
- "updated": "2026-11-26T02:33Z",
+ "updated": "2026-11-26T02:37Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
@@ -67,8 +67,8 @@
   },
   {
    "id": "f2b-20261125T2317-decisions-endorsement",
-   "state": "sent to router.a to forward to decisions.2 via b.maestro",
-   "since": "2026-11-26T02:33Z"
+   "state": "done another way (decisions.2 endorsed at 02:35:30Z)",
+   "since": "2026-11-26T02:37Z"
   },
   {
    "id": "f2a-20261126T0232-observability-handover",
