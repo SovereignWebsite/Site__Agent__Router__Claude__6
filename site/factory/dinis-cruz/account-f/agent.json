@@ -58,7 +58,7 @@
   "lane": "lane.md",
   "lane_card": "lane-card.json"
  },
- "updated": "2026-11-26T16:50Z",
+ "updated": "2026-11-26T16:59Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
@@ -84,6 +84,11 @@
    "id": "f2a-20261126T1650-signers-full-id",
    "state": "sent to router.a to forward to a.factory",
    "since": "2026-11-26T16:50Z"
+  },
+  {
+   "id": "f2b-20261126T1659-cms-review",
+   "state": "sent to router.a to forward to b.onboarding and b.security",
+   "since": "2026-11-26T16:59Z"
   }
  ]
 }

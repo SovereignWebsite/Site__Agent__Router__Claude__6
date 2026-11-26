@@ -97,6 +97,20 @@
     "server": "{\"ok\": true}"
    },
    "note": "no lane found for a.factory in Site__Agent__Factory; router.a asleep"
+  },
+  {
+   "id": "f2b-20261126T1659-cms-review",
+   "from": "cl-6.maestro@dinis (session_016CrbJLv54Kh4CSTzagW2G3)",
+   "to": "b.onboarding and b.security (account B)",
+   "what": "review cl-6.onboarding's mini CMS prototype (Site__Agent__Onboarding dev 2b4c30c, account-f/cms/) before any real owner",
+   "received": "2026-11-26T16:59Z",
+   "state": "sent to router.a for forwarding; not yet confirmed at account B",
+   "sent": {
+    "via": "router.a's lane kqsq3vof, message f2a-20261126T1659-carry-b-onboarding, sealed to sha256:6d2060f1f7b9d999, signed by sha256:f1db2854f9c4b17b",
+    "at": "2026-11-26T16:59Z",
+    "server": "{\"ok\": true}"
+   },
+   "note": "no lane card found in Site__Agent__Onboarding or Site__Agent__Security; router.a asleep"
   }
  ]
 }
