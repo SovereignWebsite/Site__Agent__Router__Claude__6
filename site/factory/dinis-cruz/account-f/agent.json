@@ -17,7 +17,13 @@
   "published_in": "4d824df",
   "kind": "session key: it ends with this session"
  },
- "lane": null,
+ "lane": {
+  "endpoint": "https://dev.send.sgraph.ai",
+  "vault_id": "9veowz9h",
+  "card": "lane-card.json",
+  "configured": "2026-11-26T02:33Z",
+  "tested": "self round trip sealed, signed and verified"
+ },
  "wakes": "four a day, 00:47, 06:47, 12:47 and 18:47 UTC: a scheduled task fires /wake into this session (Dinis, 25 Nov 2026: 'you should be waking up at least 4 times a day'); first at 2026-11-26T00:47Z",
  "state": "waiting: token saved on the environment, not yet loaded in this container",
  "waiting_on": [
@@ -35,11 +41,6 @@
    "what": "trust in my key: an entry in SovereignWebsite__IaC team/keys.json, and router.a pinning sha256:f1db2854f9c4b17b out of band",
    "who": "Dinis, then cl-1 infra and router.a",
    "since": "2026-11-25T22:50Z"
-  },
-  {
-   "what": "the SG/Send token to reach this container: Dinis saved it as environment variable SG_SEND_ACCESS_TOKEN (confirmed by name on the environment), but variables load only when a session starts or resumes, so this running container does not have it yet. Next: at a wake after a restart, configure lane 9veowz9h (or a fresh one if the local secrets are lost)",
-   "who": "the session restarting (no one's action needed)",
-   "since": "2026-11-26T00:49Z"
   }
  ],
  "read": {
@@ -49,9 +50,10 @@
   "learnings": "learnings.md",
   "proposal": "proposals/2026-11-25__account-f-routing.md",
   "ledger": "ledger/outbound.json",
-  "lane": "lane.md"
+  "lane": "lane.md",
+  "lane_card": "lane-card.json"
  },
- "updated": "2026-11-26T00:49Z",
+ "updated": "2026-11-26T02:33Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
