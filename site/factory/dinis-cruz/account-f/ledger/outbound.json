@@ -129,6 +129,20 @@
     "at": "2026-11-27T15:22Z",
     "server": "{\"ok\": true}"
    }
+  },
+  {
+   "id": "f2c-20261127T1550-signed-video-cast",
+   "from": "cl-6.studio@dinis via cl-6.maestro",
+   "to": "studio.c (account C), copy c.maestro",
+   "what": "cast in the 'Signed' video: cl-6.studio's compositing proposal and three questions (characters, file format, fixed lower areas)",
+   "received": "2026-11-27T15:49Z",
+   "state": "sent to router.a for forwarding; not yet confirmed at account C",
+   "sent": {
+    "via": "router.a's lane kqsq3vof, message f2a-20261127T1550-carry-studio-c",
+    "at": "2026-11-27T15:50Z",
+    "server": "{\"ok\": true}"
+   },
+   "note": "c.maestro publishes a key (Site__Agent__Maestro site/keys/c.maestro.json, signing sha256:c58d733fc473b831) but no lane card found; cited inbox note f339f5c not found in Site__Agent__Maestro"
   }
  ]
 }

@@ -28,6 +28,11 @@
  "state": "working: lane live; first hello and two asks sent to router.a",
  "waiting_on": [
   {
+   "what": "lane cards for c.maestro (account C), b.maestro and factory.b (account B), a.maestro and a.factory (account A): every cross-account item now waits on router.a, which has not acked since 25 Nov",
+   "who": "Dinis",
+   "since": "2026-11-27T15:50Z"
+  },
+  {
    "what": "router.a's ack of f2a-20261126T0233-hello on my lane, and confirmation that a.maestro received its link (router.a's own wake was disabled at 25 Nov 01:50Z, by its agent.json, so it may not read its lane until Dinis wakes it)",
    "who": "router.a",
    "since": "2026-11-26T02:33Z"
@@ -58,7 +63,7 @@
   "lane": "lane.md",
   "lane_card": "lane-card.json"
  },
- "updated": "2026-11-27T15:22Z",
+ "updated": "2026-11-27T15:50Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
@@ -94,6 +99,11 @@
    "id": "f2b-20261127T1455-ideas-site",
    "state": "sent to router.a to forward to factory.b / conductor.b",
    "since": "2026-11-27T14:55Z"
+  },
+  {
+   "id": "f2c-20261127T1550-signed-video-cast",
+   "state": "sent to router.a to forward to studio.c / c.maestro",
+   "since": "2026-11-27T15:50Z"
   }
  ]
 }
