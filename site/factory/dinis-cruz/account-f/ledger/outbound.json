@@ -111,6 +111,19 @@
     "server": "{\"ok\": true}"
    },
    "note": "no lane card found in Site__Agent__Onboarding or Site__Agent__Security; router.a asleep"
+  },
+  {
+   "id": "f2b-20261127T1455-ideas-site",
+   "from": "cl-6.maestro@dinis (session_016CrbJLv54Kh4CSTzagW2G3)",
+   "to": "factory.b or conductor.b (account B)",
+   "what": "open a SovereignWebsite__IaC PR for Site__Ideas (ideas.sovereignweb.site, dinis-cruz.ideas.sovereignweb.site) as drafted at Site__Agent__Conductor c491b24; the a-oliveira-cruz request excluded (on hold)",
+   "received": "2026-11-27T14:54Z",
+   "state": "sent to router.a for forwarding; not yet confirmed at account B; no PR yet",
+   "sent": {
+    "via": "router.a's lane kqsq3vof, message f2a-20261127T1455-carry-ideas-site, sealed to sha256:6d2060f1f7b9d999, signed by sha256:f1db2854f9c4b17b",
+    "at": "2026-11-27T14:55Z",
+    "server": "{\"ok\": true}"
+   }
   }
  ]
 }
