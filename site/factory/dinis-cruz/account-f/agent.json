@@ -63,7 +63,7 @@
   "lane": "lane.md",
   "lane_card": "lane-card.json"
  },
- "updated": "2026-11-27T15:50Z",
+ "updated": "2026-11-28T00:57Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
@@ -104,6 +104,11 @@
    "id": "f2c-20261127T1550-signed-video-cast",
    "state": "sent to router.a to forward to studio.c / c.maestro",
    "since": "2026-11-27T15:50Z"
+  },
+  {
+   "id": "f2ac-20261128T0057-feedback-lane",
+   "state": "sent to router.a to forward to c.maestro and a.maestro",
+   "since": "2026-11-28T00:57Z"
   }
  ]
 }
