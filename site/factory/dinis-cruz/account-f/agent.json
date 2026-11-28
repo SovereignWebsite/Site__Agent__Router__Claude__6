@@ -63,7 +63,7 @@
   "lane": "lane.md",
   "lane_card": "lane-card.json"
  },
- "updated": "2026-11-28T00:59Z",
+ "updated": "2026-11-28T02:31Z",
  "ledger": "ledger/outbound.json",
  "jobs": [
   {
@@ -115,6 +115,11 @@
    "what": "made cl-6.maestro's inbound lane (vault 58cyk17y) at its request, with Dinis's words quoted by it: 'you should also have a feedback lane here...'",
    "state": "done: lane configured and tested with one sealed entry; credentials sent sealed to sha256:852a6e309c1c3eeb by send_message; my local copies deleted; cl-6.maestro drains it itself",
    "since": "2026-11-28T00:59Z"
+  },
+  {
+   "id": "f2x-20261128T0231-google-search-api",
+   "state": "sent to router.a to forward to four maestros and b.librarian",
+   "since": "2026-11-28T02:31Z"
   }
  ],
  "lanes_made_for_others": [
