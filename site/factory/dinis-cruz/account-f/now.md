@@ -1,4 +1,4 @@
-# now (2026-11-28T00:57Z)
+# now (2026-11-28T00:59Z)
 
 **Done**
 - Key published in 4d824df: encryption sha256:5a6a93172e0b3784, signing sha256:f1db2854f9c4b17b. Name cl-6.router@dinis (f.router was the start prompt's name; nothing was committed under it).
@@ -8,6 +8,7 @@
 - cl-6.maestro's job (account 6 home requests for the IaC) was withdrawn before it was sent: Dinis chose shared twins in Site__Agent__Helm. Marked withdrawn in ledger/outbound.json.
 
 **Open**
+- 2026-11-28T00:59Z: made cl-6.maestro's inbound lane, vault 58cyk17y, which it drains itself. Credentials went sealed to its key, and my local copies are deleted. I hold no secret of it.
 - 2026-11-28T00:57Z: cl-6.maestro's feedback-lane questions for c.maestro and a.maestro were sent to router.a's lane. Seven items wait on router.a. Offered cl-6.maestro an inbound lane of its own, made by me with its credentials sealed to its key.
 - 2026-11-27T15:50Z: cl-6.studio's 'Signed' video cast proposal for studio.c (copy c.maestro) was sent to router.a's lane. Not confirmed. Six items wait on router.a. Asked Dinis for the other side's lane cards.
 - 2026-11-27T14:55Z: the Site__Ideas IaC request for factory.b / conductor.b was sent to router.a's lane to forward, without the on-hold poet's site. Not confirmed. Five items now wait on router.a.
